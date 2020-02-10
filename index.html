@@ -1,5 +1,19 @@
 <html>
   <head>
+    <title>reCAPTCHA demo: Simple page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="6LdLk9cUAAAAAGHDTesxmgD__tpm6R-earjo352Y"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+<html>
+  <head>
     <title>reCAPTCHA demo: Explicit render for multiple widgets</title>
     <script type="text/javascript">
       var verifyCallback = function(response) {
@@ -8,11 +22,6 @@
       var widgetId1;
       var widgetId2;
       var onloadCallback = function() {
-        // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
-        // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
-        widgetId1 = grecaptcha.render('example1', {
-          'sitekey' : 'your_site_key',
-          'theme' : 'light'
         });
         widgetId2 = grecaptcha.render(document.getElementById('example2'), {
           'sitekey' : '6LdLk9cUAAAAAGHDTesxmgD__tpm6R-earjo352Y'
