@@ -1,41 +1,10 @@
 <html>
-  <head>
-    <title>Зароботок онлайн </title>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  </head>
-  <body>
-    <form action="?" method="POST">
-      <div class="g-recaptcha" data-sitekey="6LdLk9cUAAAAAGHDTesxmgD__tpm6R-earjo352Y"></div>
-      <br/>
-      <input type="submit" value="Submit">
-    </form>
-  </body>
+<head>
+</head>
+<body>
+<script>
+var x=40;
+ alert(x);
+</script>
+</body>
 </html>
-<html>
-  <head>
-    <meta name="verify-admitad" content="fb07a89702" />
-    <script type="text/javascript">
-      var verifyCallback = function(response) {
-        alert(response);
-      };
-      var widgetId1;
-      var onloadCallback = function() {
-        // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
-        // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
-        widgetId1 = grecaptcha.render('example1', {
-          'sitekey' : 'your_site_key',
-          'theme' : 'light'
-        });
-        </script>
-  </head>
-  <body>
-    <!-- The g-recaptcha-response string displays in an alert message upon submit. -->
-    <form action="javascript:alert(grecaptcha.getResponse(widgetId1));">
-      <div id="example1"></div>
-      <br>
-    </form>
-    <br>
-    </script>
-  </head>
-  <body>
-
