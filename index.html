@@ -1,20 +1,27 @@
 <html>
-    <head>
-        <title>Pag Titl</title>
-    </head>
-    <body>
-    <input type="text" id="reg1">
-    <input type="text" id="pass1">
-    <button 
-    type="button" onclick="regi1()" >Продолжить
-    </button>
-    <script>
-     function regi1() {
-     var x = document.getElementById("reg1").value
-     var y = document.getElementById("pass1").value
-     <a href="about.html"></a>
+<head>
+</head>
+<input type="text" id="login">
+<input type="text" id="pass">
+<button onclick="send()">Отправить</button>
+<body>
+<script>
+function send(){
+var x =document.getElementById("login").value
+var y =document.getElementById("pass").value
+document.write(" ")
+var z =prompt("login",)
+var a =prompt("pass",)
+if (x == z && a == y){
+   alert("welcome")
+   document.location.href = url.about.html;
+   
+}
+else {
+ alert("Error")
  
-     }
-    </script>
-    </body>
+}
+}
+</script>
+</body>
 </html>
