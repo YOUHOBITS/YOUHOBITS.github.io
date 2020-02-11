@@ -1,1 +1,18 @@
-fb07a89702
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+    <input type="text" id="reg1">
+    <input type="text" id="pass1">
+    <button 
+    type="button" onclick="regi1()" >Продолжить
+    </button>
+    <script>
+     function regi1(){
+     var x = document.getElementById("reg1").value
+     alert(x)
+     }
+    </script>
+    </body>
+</html>
