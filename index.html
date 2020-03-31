@@ -5,44 +5,48 @@
 </div>
 <div class="tab"></div>
 <div class="users">
-<input class="user" type="button" onclick="hrefuser()">
+    <input class="user" type="button" onclick="hrefuser()">
 </div>
-<div class="cyberall">
-    <div class="cyber_tab"></div>
-    <div class="soon">
-        <img src="https://cdn.discordapp.com/attachments/534443712705593394/693124891469283339/55555555.png" height="30" width="88">
-    </div>
-    <div class="cyber">
-        <img src="image/1579199840-5975.jpg" height="100" width="180">
-    </div>
-    <div class="txt_cyber">
-        <div>
+<div class="games">
+    <div class="cyberall">
+        <div class="cyber_tab"></div>
+        <div class="soon">
+            <img src="https://cdn.discordapp.com/attachments/534443712705593394/693124891469283339/55555555.png" height="30" width="88">
         </div>
-    </div>
-    <div class="btn"></div>
-    <div class="allwitcher">
-        <div class="witchertab"></div>
-        <div class="witcherimg">
-            <img src="image/%D0%91%D0%B5%D0%B7%20%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20(1).jpg" height="100" width="180">
+        <div class="cyber">
+            <img src="image/1579199840-5975.jpg" height="100" width="180">
         </div>
-        <div class="witchertxt"></div>
-    </div>
-    <div class="allfallout">
-        <div class="fallout_tab"></div>
-        <div class="falloutimg">
-            <img src="image/jDSqf_DUptBSHvTjChyJSQ.jpeg" height="100" width="180">
+        <div class="txt_cyber">
+            <div>
+            </div>
         </div>
-        <div class="fallout_txt"></div>
+        <div class="btn"></div>
+        <div class="allwitcher">
+            <div class="witchertab"></div>
+            <div class="witcherimg">
+                <img src="image/%D0%91%D0%B5%D0%B7%20%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20(1).jpg" height="100" width="180">
+            </div>
+            <div class="witchertxt"></div>
+        </div>
+        <div class="allfallout">
+            <div class="fallout_tab"></div>
+            <div class="falloutimg">
+                <img src="image/jDSqf_DUptBSHvTjChyJSQ.jpeg" height="100" width="180">
+            </div>
+            <div class="fallout_txt"></div>
+        </div>
+        <div class="buy_Cyber">
+            <img src="image/hotpng.com.png" height="30px" width="30px">
+        </div>
+        <div class="buy_Fallout">
+            <img src="image/hotpng.com.png" height="30px" width="30px">
+        </div>
+        <div class="buy_Witcher">
+            <img src="image/hotpng.com.png" height="30px" width="30px">
+        </div>
+        <div class="news"></div>
     </div>
-    <div class="buy_Cyber">
-        <img src="image/hotpng.com.png" height="30px" width="30px">
-    </div>
-    <div class="buy_Fallout">
-        <img src="image/hotpng.com.png" height="30px" width="30px">
-    </div>
-    <div class="buy_Witcher">
-        <img src="image/hotpng.com.png" height="30px" width="30px">
-    </div>
+
     <head>
         <style>
             body {
@@ -52,7 +56,8 @@
                 animation-duration: 6s;
                 animation-iteration-count: infinite;
             }
-            
+
+            .news {}
 
             .buy_Witcher {
                 position: fixed;
@@ -89,6 +94,7 @@
                 top: 400;
 
             }
+
             .fallout_tab {
                 opacity: 0;
                 position: fixed;
@@ -156,8 +162,8 @@
             }
 
             .user {
-                border:none;
-                background:url("image/pngguru.com.png");
+                border: none;
+                background: url("image/pngguru.com.png");
                 position: fixed;
                 left: 10;
                 top: 7;
@@ -205,18 +211,38 @@
                 }
             }
 
+            @media screen and (orientation:portrait) {
+                .games {
+                    transform: translate(0px, 0px);
+                }
+
+                .user {
+                    transform: translate(0px, 10px)
+                }
+
+                .tab {
+                    height: 3%;
+                }
+            }
+
             @import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
-            <script data-ad-client="ca-pub-9815894255850119" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <script data-ad-client="ca-pub-9815894255850119"async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
         </style>
     </head>
 
     <body>
         <script>
-            function hrefuser(){
-            window.location.assign("user.html")
-           }
-            $(".buy_Witcher")
+            function hrefuser() {
+                window.location.assign("www.google.com")
+            }
+            $(".buy_Witcher").click(function() {
+            window.location.assign("www.google.com")
+            });
+
         </script>
     </body>
 
