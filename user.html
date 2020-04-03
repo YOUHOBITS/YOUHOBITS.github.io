@@ -3,9 +3,12 @@
 <div class="tab"></div>
 <div class="text">
     <div class="setting">Password</div>
+    <div class="passres">Reset password</div>
 </div>
 <div class="test">
 </div>
+<div class="arrow"></div>
+
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
@@ -52,6 +55,27 @@
             opacity: 1;
         }
 
+        .arrow {
+            transform: rotate(45deg);
+            opacity: 1;
+            position: fixed;
+            left: 140;
+            top: 60;
+            height: 20px;
+            width: 20px;
+            background: white;
+        }
+
+        .passres {
+            font-size: 20;
+            opacity: 0;
+        }
+
+        passresview {
+            font-size: 20;
+            opacity: 0;
+        }
+
         .tabb {
             position: fixed;
             background: #979696;
@@ -76,8 +100,12 @@
             $(".text").toggleClass("textview", 2000, "easeOutSine");
         });
         $(".text").click(function() {
-            window.location.assign("about.html")
-            });
+            $window.location.assign("about.html")
+        });
+        $(".arrow").click(function() {
+            $(".passres").toggleClass("passresview", 2000, "easeOutSine");
+        });
+
     </script>
 </body>
 
