@@ -1,0 +1,112 @@
+<html>
+<div class="iconuser"></div>
+<div class="tab"></div>
+<div class="text">
+    <div class="setting">Password</div>
+    <div class="passres">Reset password</div>
+</div>
+<div class="test">
+</div>
+<div class="arrow"></div>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <style>
+        body {
+            background: gray;
+        }
+
+        .test {
+            background: url(image/%D0%91%D0%B5%D0%B7%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-1.png);
+            position: fixed;
+            height: 30px;
+            width: 30px;
+            left: 0;
+        }
+
+        .iconuser {
+            position: fixed;
+            background: url("image/pngguru.com.png");
+            height: 40px;
+            width: 40px;
+        }
+
+        .tab {
+            position: fixed;
+            background: #979696;
+            height: 100%;
+            width: 30px;
+            top: 0;
+            left: 0;
+        }
+
+        .text {
+            font-family: 'Baloo Thambi 2', cursive;
+            position: fixed;
+            color: whitesmoke;
+            top: 50;
+            left: 10;
+            opacity: 0;
+            font-size: 20pt;
+        }
+
+        .textview {
+            opacity: 1;
+        }
+
+        .arrow {
+            transform: rotate(45deg);
+            opacity: 1;
+            position: fixed;
+            left: 140;
+            top: 60;
+            height: 20px;
+            width: 20px;
+            background: white;
+        }
+
+        .passres {
+            font-size: 20;
+            opacity: 0;
+        }
+
+        passresview {
+            font-size: 20;
+            opacity: 0;
+        }
+
+        .tabb {
+            position: fixed;
+            background: #979696;
+            height: 100%;
+            width: 200px;
+            top: 0;
+            left: 0;
+        }
+
+    </style>
+    <script data-ad-client="ca-pub-9815894255850119" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <script>
+        $(".test").click(function() {
+            $(".tab").toggleClass("tabb", 1000, "easeOutSine");
+        });
+        $(".test").click(function() {
+            $(".text").toggleClass("textview", 2000, "easeOutSine");
+        });
+        $(".text").click(function() {
+            $window.location.assign("about.html")
+        });
+        $(".arrow").click(function() {
+            $(".passres").toggleClass("passresview", 2000, "easeOutSine");
+        });
+
+    </script>
+</body>
+
+</html>
